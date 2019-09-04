@@ -4,15 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_blue_bubble">
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/ic_background">
     <!--tools:context="helpinghand.helpinghand2.forUser.BookingDetail"-->
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
         android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -26,10 +37,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp" />
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +56,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/etworktype"
+                android:id="@+id/bookworktype"
                 style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -61,11 +71,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp" />
-
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            />
 
 
         <LinearLayout
@@ -92,17 +100,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/date_btn"
+                android:id="@+id/bookdate"
                 android:padding="8dp"
                 android:text="Select Date"/>
 
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp" />
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,17 +135,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/startingtime_btn"
+                android:id="@+id/booktime"
                 android:padding="8dp"
                 android:text="Select Time"/>
 
         </LinearLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp" />
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,24 +173,31 @@
             android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/workdesc"
+                android:layout_height="500dp"
+                android:id="@+id/bookworkdesc"
                 android:padding="8dp"
-                android:text="your work description here"/>
+                android:hint="your work description here"/>
         </ScrollView>
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp" />
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            />
 
 
         <Button
-            android:id="@+id/book"
+            android:id="@+id/btnbook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:background="@drawable/ic_button_background"
+            android:textColor="#00695C"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:clickable="true"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="Book it." />
 
     </LinearLayout>
